@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- XNM Esports - Expect No Mercy -->
+<!-- Website by XNM -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XNM - Expect No Mercy | BGMI Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">XNM</span>
+                <span class="logo-subtitle">Expect No Mercy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="XNM">XNM</h1>
+            <p class="hero-subtitle">EXPECT NO MERCY</p>
+            <p class="hero-description">Elite BGMI Squad | Dominating the Battlegrounds</p>
+            <div class="hero-buttons">
+                <a href="#events" class="btn btn-primary">View Events</a>
+                <a href="#contact" class="btn btn-secondary">Connect</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About XNM</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>XNM (Expect No Mercy) is a premier BGMI esports team dedicated to excellence, strategy, and domination. We are a group of highly skilled players who have come together with one goal: to be the best.</p>
+                    <p>Our team thrives on intense competition, strategic gameplay, and unwavering determination. We don't just play the game—we master it.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">50+</h3>
+                            <p>Tournaments</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">25+</h3>
+                            <p>Victories</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">4</h3>
+                            <p>Elite Players</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#00ff88" d="M45.7,-59.4C58.9,-50.3,69.2,-36.8,73.8,-21.4C78.4,-6,77.3,11.3,70.5,26.1C63.7,40.9,51.2,53.2,36.8,60.8C22.4,68.4,6.1,71.3,-10.8,70.1C-27.7,68.9,-45.2,63.6,-57.4,53.1C-69.6,42.6,-76.5,26.9,-77.8,10.5C-79.1,-5.9,-74.8,-23,-65.3,-37.4C-55.8,-51.8,-41.1,-63.5,-25.3,-71.5C-9.5,-79.5,7.4,-83.8,22.6,-80.3C37.8,-76.8,51.3,-65.5,45.7,-59.4Z" transform="translate(100 100)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-grid" id="events-container">
+                <!-- Events will be loaded dynamically from inline JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Data (Edit this to update events) -->
+    <script id="events-data" type="application/json">
+    {
+      "events": [
+        {
+          "day": "15",
+          "month": "MAR",
+          "title": "BGMI Pro League Championship",
+          "location": "Online Tournament",
+          "description": "Join us as we compete in the biggest BGMI tournament of the season. Prize pool of ₹10,00,000!",
+          "time": "6:00 PM IST",
+          "metaType": "prize",
+          "metaValue": "₹10L Prize Pool",
+          "linkText": "Get in Touch →",
+          "featured": true
+        },
+        {
+          "day": "22",
+          "month": "MAR",
+          "title": "XNM Community Scrims",
+          "location": "Custom Room",
+          "description": "Practice session with our community. Open to all skill levels. Come learn from the pros!",
+          "time": "8:00 PM IST",
+          "metaType": "type",
+          "metaValue": "🎮 Practice Match",
+          "linkText": "Get in Touch →",
+          "featured": false
+        },
+        {
+          "day": "28",
+          "month": "MAR",
+          "title": "Regional Qualifiers",
+          "location": "Online Tournament",
+          "description": "Qualifying rounds for the National Championship. Top 16 teams advance to finals.",
+          "time": "5:00 PM IST",
+          "metaType": "prize",
+          "metaValue": "₹2L Prize Pool",
+          "linkText": "Get in Touch →",
+          "featured": false
+        },
+        {
+          "day": "05",
+          "month": "APR",
+          "title": "XNM vs Top Teams Showdown",
+          "location": "Live Stream",
+          "description": "Exhibition match against top-ranked teams. Watch live on our YouTube channel!",
+          "time": "7:00 PM IST",
+          "metaType": "type",
+          "metaValue": "📺 Live Stream",
+          "linkText": "Get in Touch →",
+          "featured": false
+        },
+        {
+          "day": "12",
+          "month": "APR",
+          "title": "Team Bootcamp",
+          "location": "Training Facility",
+          "description": "Intensive training session to prepare for upcoming championships. Strategy and gameplay analysis.",
+          "time": "All Day",
+          "metaType": "type",
+          "metaValue": "🎯 Training",
+          "linkText": "Get in Touch →",
+          "featured": false
+        },
+        {
+          "day": "20",
+          "month": "APR",
+          "title": "National BGMI Championship",
+          "location": "Hybrid Event",
+          "description": "The ultimate showdown! Competing for the national title and international qualification.",
+          "time": "4:00 PM IST",
+          "metaType": "prize",
+          "metaValue": "₹25L Prize Pool",
+          "linkText": "Get in Touch →",
+          "featured": false
+        }
+      ]
+    }
+    </script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            <p class="contact-intro">Follow XNM across social media for live updates, match highlights, behind-the-scenes content, and exclusive announcements!</p>
+            
+            <div class="social-grid" id="social-container">
+                <!-- Social media cards will be loaded dynamically from inline JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Links Data (Edit this to update social links) -->
+    <script id="social-data" type="application/json">
+    {
+      "socialLinks": [
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/xnm",
+          "description": "Latest updates & news",
+          "icon": "facebook"
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://instagram.com/xnm",
+          "description": "Photos & highlights",
+          "icon": "instagram"
+        },
+        {
+          "platform": "WhatsApp",
+          "url": "https://wa.me/919876543210",
+          "description": "Direct messaging",
+          "icon": "whatsapp"
+        },
+        {
+          "platform": "YouTube",
+          "url": "https://youtube.com/@xnm",
+          "description": "Match streams & VODs",
+          "icon": "youtube"
+        },
+        {
+          "platform": "Discord",
+          "url": "https://discord.gg/xnm",
+          "description": "Join our community",
+          "icon": "discord"
+        },
+        {
+          "platform": "TikTok",
+          "url": "https://tiktok.com/@xnm",
+          "description": "Short clips & moments",
+          "icon": "tiktok"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">XNM</span>
+                    <p>Expect No Mercy</p>
+                </div>
+                <p class="footer-text">&copy; 2026 XNM Esports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
