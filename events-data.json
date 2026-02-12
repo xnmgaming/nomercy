@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "day": "⏳",
+      "month": "SOON",
+      "title": "Exciting Events Coming Soon!",
+      "location": "Watch This Space",
+      "description": "We're planning some amazing tournaments and community events. Stay tuned for announcements on our social media channels!",
+      "time": "TBA",
+      "metaType": "type",
+      "metaValue": "📢 Stay Updated",
+      "linkText": "Follow Us →",
+      "featured": true
+    },
+    {
+      "day": "Soon",
+      "month": "Soon",
+      "title": "Exciting Events Coming Soon",
+      "location": "Online Tournament",
+      "description": "It's comming...",
+      "time": "TBA",
+      "metaType": "prize",
+      "metaValue": "📢 Stay Updated",
+      "linkText": "Follow Us →",
+      "featured": false
+    }
+  ]
+}
