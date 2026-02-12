@@ -57,17 +57,17 @@ function loadSocialLinks() {
     }
 }
 
-// Load and display events from inline JSON
-function loadEvents() {
+// Load and display events from external JSON file
+async function loadEvents() {
     try {
-        // Get inline JSON data
-        const eventsDataElement = document.getElementById('events-data');
-        if (!eventsDataElement) {
-            console.error('Events data not found');
-            return;
+        // Fetch external JSON file
+        const response = await fetch('events-data.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
         
-        const data = JSON.parse(eventsDataElement.textContent);
+        const data = await response.json();
         const eventsContainer = document.getElementById('events-container');
         
         if (!eventsContainer) return;
@@ -120,7 +120,7 @@ function loadEvents() {
         console.error('Error loading events:', error);
         const eventsContainer = document.getElementById('events-container');
         if (eventsContainer) {
-            eventsContainer.innerHTML = '<p style="text-align: center; color: var(--text-gray);">Unable to load events. Please check the events data format.</p>';
+            eventsContainer.innerHTML = '<p style="text-align: center; color: var(--text-gray);">Unable to load events. Please check your connection.</p>';
         }
     }
 }
