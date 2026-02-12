@@ -11,6 +11,18 @@
       "metaValue": "📢 Stay Updated",
       "linkText": "Follow Us →",
       "featured": true
+    },
+    {
+      "day": "Soon",
+      "month": "Soon",
+      "title": "Exciting Events Coming Soon",
+      "location": "Online Tournament",
+      "description": "It's comming...",
+      "time": "TBA",
+      "metaType": "prize",
+      "metaValue": "📢 Stay Updated",
+      "linkText": "Follow Us →",
+      "featured": false
     }
   ]
 }
